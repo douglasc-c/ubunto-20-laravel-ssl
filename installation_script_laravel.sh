@@ -52,7 +52,7 @@ sudo certbot --apache
 echo "${green}[4/8] Installing Composer${reset}"
 echo ""
 sudo curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/local/bin/composer
+sudo sudo mv composer.phar /usr/local/bin/composer
 sudo service apache2 restart
 
 # [5/8] Gerando chave SSH
