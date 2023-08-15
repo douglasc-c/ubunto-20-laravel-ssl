@@ -23,7 +23,7 @@ echo "${yellow}[QUESTION] Type the version of PHP that you want to install:${res
 read phpVersion
 sudo add-apt-repository ppa:ondrej/php -y 
 sudo apt-get update 
-sudo apt-get install -y php$phpVersion php$phpVersion-imac php$phpVersion-curl php$phpVersion-mysql php$phpVersion-mbstring php$phpVersion-bcmath php$phpVersion-simplexml php$phpVersion-imagick php$phpVersion-intl php$phpVersion-zip php$phpVersion-gd unzip curl openssl
+sudo apt-get install -y php$phpVersion php$phpVersion-imap php$phpVersion-curl php$phpVersion-mysql php$phpVersion-mbstring php$phpVersion-bcmath php$phpVersion-simplexml php$phpVersion-imagick php$phpVersion-intl php$phpVersion-zip php$phpVersion-gd unzip curl openssl
 sudo a2enmod rewrite
 echo ""
 
