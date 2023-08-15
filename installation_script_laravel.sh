@@ -21,9 +21,22 @@ echo ""
 echo "${yellow}[QUESTION] Type the version of PHP that you want to install:${reset}"
 read phpVersion
 echo ""
-sudo add-apt-repository ppa:ondrej/php -y
+sudo add-apt-repository ppa:ondrej/php  -y 
+sudo apt-get install php$phpVersion -y 
 sudo apt-get update 
-sudo apt-get install -y php$phpVersion php$phpVersion-imac php$phpVersion-curl php$phpVersion-mysql php$phpVersion-mbstring php$phpVersion-bcmath php$phpVersion-simplexml php$phpVersion-imagick php$phpVersion-intl php$phpVersion-zip php$phpVersion-gd unzip curl openssl
+sudo apt-get install php$phpVersion-imac
+sudo apt-get install php$phpVersion-curl -y
+sudo apt-get install php$phpVersion-mysql -y
+sudo apt-get install php$phpVersion-mbstring -y
+sudo apt-get install php$phpVersion-bcmath -y
+sudo apt-get install php$phpVersion-simplexml -y
+sudo apt-get install php$phpVersion-imagick -y
+sudo apt-get install php$phpVersion-intl -y
+sudo apt-get install php$phpVersion-zip -y
+sudo apt-get install php$phpVersion-gd -y
+sudo apt-get install unzip -y
+sudo apt-get install curl -y
+sudo apt-get install openssl -y
 sudo a2enmod rewrite
 
 # [3/8] Instalando Certbot para SSL
